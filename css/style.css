@@ -52,14 +52,14 @@ hr {
 
 #image1 {
 	width: 45%;
-	float: left;
-	margin-right: 30px;
-	margin-bottom: 20px;
+	float: right;
+	margin-left: 30px;
+	margin-bottom: 10px;
 }
 
 #image2 {
 	width: 40%;
-	float: right;
-	margin-left: 30px;
-	margin-bottom: 20px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 10px;
 }
