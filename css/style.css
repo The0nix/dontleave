@@ -27,6 +27,7 @@ hr {
 
 .content {
 	background-color: white;
+	/*min-width: 1200px;*/
 	width: 65%;
 	margin: auto;
 	box-shadow: 0 0 60px -35px;
@@ -51,12 +52,14 @@ hr {
 
 #image1 {
 	width: 45%;
-	float: left;
-	margin-right: 30px;
+	float: right;
+	margin-left: 30px;
+	margin-bottom: 20px;
 }
 
 #image2 {
 	width: 40%;
-	float: right;
-	margin-left: 30px;
+	float: left;
+	margin-right: 30px;
+	margin-bottom: 20px;
 }
