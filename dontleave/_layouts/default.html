@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>    
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/assets/images/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/images/favicon-16x16.png">
+    <link rel="stylesheet" href="{{ "/assets/css/styles.css" | prepend: site.baseurl_root }}">
+    <title>{% translate page.title %}</title>
+</head>
+<body>
+    <div class="content">
+    	{{ site.baseurl_root }}
+    	{% if site.lang == "ru" %}
+    	  {% capture image_path %}/assets/images/en.png{% endcapture %}
+		  {% capture link %}{{ site.baseurl_root }}/en{{ page.url }}{% endcapture %}
+		{% elsif site.lang == "en" %}
+		  {% capture image_path %}/assets/images/ru.png{% endcapture %}
+		  {% capture link %}{{ site.baseurl_root }}{{ page.url  }}{% endcapture %}
+		{% endif %}
+	<a href="{{ link }}">
+		<div class="language-switch">
+	    	<img class="lang-img" src="{{ image_path }}">
+	    </div>
+    </a>
+        {{ content }}
+    </div>
+</body>
+</html>

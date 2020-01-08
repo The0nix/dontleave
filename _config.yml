@@ -1,0 +1,9 @@
+destination: docs
+source: dontleave
+exclude: ['*.psd']
+
+languages: ["ru", "en"]
+exclude_from_localizations: ["assets/images", "assets/css"]
+
+plugins:
+  - jekyll-multiple-languages-plugin
